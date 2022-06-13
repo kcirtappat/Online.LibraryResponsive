@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Online.Library</title>
+		<!-- CSS only -->
+        <style>
+            tr, td {
+                text-align: center;
+            }
+        </style>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<!-- JavaScript Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
+
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">
+                    <img class="" src="images/brandlogo.png" width="60" height="60" alt="">
+                        ONLINE.LIBRARY</a>
+                <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="false" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav p-2">
+                    <li class="nav-item">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Enter Book Title, Author, Etc." aria-label="Search">
+                            <select class="form-select me-2" id="country">
+                                <option value="">Filter</option>
+                                <option value="">Book Title</option>
+                                <option value="">Author</option>
+                                <option value="">Date Published</option>
+                            </select>
+                            <button class="btn btn-outline-warning bg-secondary me-2" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="row">
+            <div class="container">
+                <form action="">
+                    <table class="table table-responsive-lg table-striped table-secondary">
+                        <thead>
+                            <tr>
+                                <th>Book Cover</th>
+                                <th>Book Title</th>
+                                <th>Author</th>
+                                <th>Date Published</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href=""><img class="img-fluid border-5" width="200" src="images/image1.jpg" alt="ToKillaMockingbird" /></a></td>
+                            <td>To Kill a Mockingbird</td>
+                            <td>Harper Lee</td>
+                            <td>July 11, 1960</td>
+                            <td>
+                                <input class="btn btn-secondary" type="button" value="Add to Cart" name="addtocart" id="addtocart"/>
+                                <input class="btn btn-secondary" type="button"value="Add to Wishlist" name=" addtowishlist"id="addtowishlist" />
+                                <input class="btn btn-warning" type="submit" value="Buy now" name="buynow" id="buynow"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href=""><img class="img-fluid" width="200" src="images/image2.jpg" alt="The Great Gatsby"></a></td>
+                            <td>The Great Gatsby</td>
+                            <td>E. Scott Fitzgerald</td>
+                            <td>April 10, 1925</td>
+                            <td>
+                                <input class="btn btn-secondary" type="button" value="Add to Cart" name="addtocart" id="addtocart"/>
+                                <input class="btn btn-secondary" type="button"value="Add to Wishlist" name=" addtowishlist"id="addtowishlist" />
+                                <input class="btn btn-warning" type="submit" value="Buy now" name="buynow" id="buynow"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href=""><img class="img-fluid" width="200" src="images/image3.jpg" alt="The Great Gatsby"></a></td>
+                            <td>Nineteen Eighty Four</td>
+                            <td>George Orwell</td>
+                            <td>June 8, 1919</td>
+                            <td>
+                                <input class="btn btn-secondary" type="button" value="Add to Cart" name="addtocart" id="addtocart"/>
+                                <input class="btn btn-secondary" type="button"value="Add to Wishlist" name=" addtowishlist"id="addtowishlist" />
+                                <input class="btn btn-warning" type="submit" value="Buy now" name="buynow" id="buynow"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href=""><img class="img-fluid" width="200" src="images/image4.jpg" alt="The Great Gatsby"></a></td>
+                            <td>Adventurrs of Huckleberry Finn</td>
+                            <td>Mark Twain</td>
+                            <td>1884</td>
+                            <td>
+                                <input class="btn btn-secondary" type="button" value="Add to Cart" name="addtocart" id="addtocart"/>
+                                <input class="btn btn-secondary" type="button"value="Add to Wishlist" name=" addtowishlist"id="addtowishlist" />
+                                <input class="btn btn-warning" type="submit" value="Buy now" name="buynow" id="buynow"/>
+                            </td>
+                        </tr>
+                    </tbody>
+                        
+                    </table>
+                </form>
+            </div>
+              
+        </div>
+        
+        
+<!--  
+        <div class="container-fluid container-expand-lg">
+            <div class="row">
+                    <form action="" method="">
+                        <br /><br />
+                        <table
+                            class="table table-striped table-hover table-bordered"
+                        >
+                            <thead class="bg-dark">
+                                <th>Book Cover</th>
+                                <th>Book Title</th>
+                                <th>Author</th>
+                                <th>Date Published</th>
+                                <th colspan="3">Action</th>
+                            </thead>
+                            <tr>
+                                <td><a href=""><img class="img-fluid" src="images/image1.jpg" alt="ToKillaMockingbird" /></a></td>
+                                <td>To Kill a Mockingbird</td>
+                                <td>Harper Lee</td>
+                                <td>July 11, 1960</td>
+                                <td>
+                                    <input
+                                        class="bstyle"
+                                        type="button"
+                                        value="Add to Cart"
+                                        name="addtocart"
+                                        id="addtocart"
+                                    />
+                                </td>
+                                <td>
+                                    <input
+                                        class="bstyle"
+                                        type="button"
+                                        value="Add to Wishlist"
+                                        name="addtowishlist"
+                                        id="addtowishlist"
+                                    />
+                                </td>
+                                <td>
+                                    <input
+                                        class="btn btn-warning"
+                                        type="submit"
+                                        value="Buy now"
+                                        name="buynow"
+                                        id="buynow"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href=""><img class="img-fluid" src="images/image2.jpg" alt="The Great Gatsby" /></a></td>
+                                <td>The Great Gatsby</td>
+                                <td>E. Scott Fitzgerald</td>
+                                <td>April 10, 1925</td>
+                                <td>
+                                    <input
+                                        class="bstyle"
+                                        type="button"
+                                        value="Add to Cart"
+                                        name="addtocart"
+                                        id="addtocart"
+                                    />
+                                </td>
+                                <td>
+                                    <input
+                                        class="bstyle"
+                                        type="button"
+                                        value="Add to Wishlist"
+                                        name="addtowishlist"
+                                        id="addtowishlist"
+                                    />
+                                </td>
+                                <td>
+                                    <input
+                                        class="btn btn-warning"
+                                        type="submit"
+                                        value="Buy now"
+                                        name="buynow"
+                                        id="buynow"
+                                    />
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td><a href=""><img class="img-fluid" src="images/image3.jpg" alt="The Great Gatsby" /></a></td>
+                                <td>Nineteen Eighty Four</td>
+                                <td>George Orwell</td>
+                                <td>June 8, 1919</td>
+                                <td>
+                                    <input
+                                        class="bstyle"
+                                        type="button"
+                                        value="Add to Cart"
+                                        name="addtocart"
+                                        id="addtocart"
+                                    />
+                                </td>
+                                <td>
+                                    <input
+                                        class="bstyle"
+                                        type="button"
+                                        value="Add to Wishlist"
+                                        name="addtowishlist"
+                                        id="addtowishlist"
+                                    />
+                                </td>
+                                <td>
+                                    <input
+                                        class="btn btn-warning"
+                                        type="submit"
+                                        value="Buy now"
+                                        name="buynow"
+                                        id="buynow"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href=""><img class="img-fluid" src="images/image4.jpg" alt="" /></a></td>
+                                <td>Adventurrs of Huckleberry Finn</td>
+                                <td>Mark Twain</td>
+                                <td>1884</td>
+                                <td>
+                                    <input
+                                        class="bstyle"
+                                        type="button"
+                                        value="Add to Cart"
+                                        name="addtocart"
+                                        id="addtocart"
+                                    />
+                                </td>
+                                <td>
+                                    <input
+                                        class="bstyle"
+                                        type="button"
+                                        value="Add to Wishlist"
+                                        name="addtowishlist"
+                                        id="addtowishlist"
+                                    />
+                                </td>
+                                <td>
+                                    <input
+                                        class="btn btn-warning"
+                                        type="submit"
+                                        value="Buy now"
+                                        name="buynow"
+                                        id="buynow"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"></td>
+                                <td>
+                                    <input class="bstyle" type="submit" value="Proceed to Checkout" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    
+            </div>
+        </div>
+		-->
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+      
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              Online.Library 2022 | 
+              <a class="text-white" href="mailto:noscoj.pat@gmail.com">jujutsu.kaizendogoo@hotmail.com</a>
+            </div>
+          </footer>
+
+
+	</body>
+</html>
